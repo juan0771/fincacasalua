@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler Finca de Descanso - Tu Refugio Ideal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para los iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Enlace a Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Finca "El COPAL"</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+                <li class="nav-item"><a href="#gallery"><i class="fas fa-images"></i> Galería</a></li>
+                <li class="nav-item"><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+            <a href="tel:3156165943" class="nav-call-button">
+                <i class="fas fa-phone"></i>3156165943
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <!-- Slider main container -->
+        <div class="swiper background-slider">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-image: url('img/1.jpg');"></div>
+            </div>
+        </div>
+        <div class="header-overlay"><div class="header-content">
+            <h1>"El COPAL"</h1>
+            <p>Tu refugio perfecto para la recreación y el descanso</p>
+        </div></div>
+       <!-- <div class="header-content">
+            <h1>Finca "El Descanso Soñado"</h1>
+            <p>Tu refugio perfecto para la recreación y el descanso</p>
+        </div>-->
+    </header>
+
+    <main class="container">
+        <!-- Sección: Sobre la Finca -->
+        <section id="about" class="card">
+            <h2>Sobre Nuestra Finca</h2>
+            <p>
+                Bienvenido a nuestro paraíso privado. Un lugar diseñado para que te desconectes de la rutina y te conectes con la naturaleza. Ideal para familias, amigos y eventos especiales.
+            </p>
+        </section>
+
+        <!-- Sección: Galería de Imágenes con Zoom -->
+        <section id="gallery" class="card">
+            <h2>Galería de Fotos</h2>
+            <p>Haz clic en una imagen para verla en grande.</p>
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1015/400/300" alt="Vista de la piscina" class="zoomable">
+                <img src="https://picsum.photos/id/1018/400/300" alt="Paisaje de montaña" class="zoomable">
+                <img src="https://picsum.photos/id/1025/400/300" alt="Habitación principal" class="zoomable">
+                <img src="https://picsum.photos/id/1040/400/300" alt="Zona de BBQ" class="zoomable">
+            </div>
+        </section>
+
+        <!-- Sección: Servicios y Comodidades -->
+        <section class="card">
+            <h2>Servicios Incluidos</h2>
+            <ul>
+                <li><i class="fas fa-water-ladder"></i> Piscina privada</li>
+                <li><i class="fas fa-wifi"></i> Wi-Fi de alta velocidad</li>
+                <li><i class="fas fa-fire-burner"></i> Zona de BBQ y parrilla</li>
+                <li><i class="fas fa-bed"></i> Habitaciones cómodas</li>
+                <li><i class="fas fa-car"></i> Parqueadero privado</li>
+                <li><i class="fas fa-kitchen-set"></i> Cocina totalmente equipada</li>
+            </ul>
+        </section>
+
+        <!-- Sección: Contacto y Redes Sociales -->
+        <section id="contact" class="card contact-card">
+            <h2>¡Reserva Ahora!</h2>
+            <p>Contáctanos directamente por WhatsApp para consultar disponibilidad y precios, o síguenos en nuestras redes.</p>
+            <a href="https://wa.me/TUNUMERODECELULAR" target="_blank" class="cta-button">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- Iconos de Redes Sociales Flotantes -->
+    <div class="floating-social-bar">
+        <a href="https://wa.me/TUNUMERODECELULAR" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/TUUSUARIO" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/TUPAGINA" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://tiktok.com/@TUUSUARIO" target="_blank" class="social-icon tiktok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+
+    <!-- Modal para el Zoom de la Imagen -->
+    <div id="zoom-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="zoomed-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Finca "El Descanso Soñado". Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
