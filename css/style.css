@@ -10,7 +10,7 @@ body {
 
 /* Estilos de la Barra de Navegación */
 .navbar {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
     height: 70px;
     display: flex;
@@ -22,7 +22,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 999;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
 
 .nav-container {
@@ -37,12 +37,14 @@ body {
 }
 
 .container {
-    max-width: 1100px;
+    width: auto;
+    height: auto;
     margin: 2rem auto;
-    padding: 0 20px;
+    padding: 0;
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    text-align: justify;
 }
 
 header {
@@ -54,6 +56,14 @@ header {
     justify-content: center;
     text-align: center;
     overflow: hidden; /* Oculta partes del slide que se salgan */
+}
+
+.p1 {
+    display:flexbox;
+    font-size: 1.5rem;
+    align-content: center;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+
 }
 
 .background-slider {
@@ -87,12 +97,12 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     z-index: 2;
 }
 
 .header-content {
-    position: relative;
+    position: relative ;
     z-index: 3;
     padding: 1rem;
 }
@@ -106,9 +116,9 @@ header h1 {
 /* Estilo de las tarjetas (cards) */
 .card {
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+    padding: 3% 8%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -142,6 +152,20 @@ header h1 {
 .gallery img.zoomable:hover {
     transform: scale(1.05);
     opacity: 0.8;
+}
+
+/* Efecto zoom en hover para imágenes zoomables */
+.zoomable {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoomable:hover {
+    transform: scale(1.05);
+}
+
+.services-img.zoomable:hover {
+    transform: scale(1.08);
 }
 
 /* Estilos para la ventana modal del zoom */
@@ -322,6 +346,34 @@ footer {
     font-weight: bold;
     font-size: 1.5rem;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo .logo-img {
+    display: block;
+    max-height: 60px; /* ajustar según diseño */
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px; /* opcional */
+}
+
+/* Reducir tamaño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-logo .logo-img {
+        max-height: 48px;
+    }
+}
+
+.container {
+    width: auto;
+    height: auto;
+    margin: 2rem auto;
+    padding: 0;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    text-align: justify;
 }
 
 .nav-menu {
@@ -487,4 +539,47 @@ footer {
     font-weight: 500;
     transition: background-color 0.3s, transform 0.3s;
 }
+}
+
+/* Estilos para la sección de servicios con imagen a la derecha */
+.services-card .services-row {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+.services-card .services-list {
+    flex: 1 1 60%;
+}
+.services-card .services-list h2 {
+    margin-top: 0;
+}
+.services-card .services-image {
+    flex: 0 0 240px; /* ancho fijo de la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-card .services-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    
+}
+
+/* Responsive: apila en pantallas pequeñas */
+@media (max-width: 768px) {
+    .services-card .services-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .services-card .services-image {
+        flex: none;
+        width: 100%;
+    }
+    .services-card .services-img {
+        height: auto;
+    }
 }
