@@ -14,14 +14,15 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo"><img src="img/.jpg.jpg"></a>
+            <!-- Cambiado: añadir class y alt al img -->
+            <a href="#" class="nav-logo"><img src="img/logo.jpg" alt="Logo Finca El Copal" class="logo-img"></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#about"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+                <li class="nav-item"><a href="#about"><i class="fas fa-info-circle"></i>¿Quiénes Somos?</a></li>
                 <li class="nav-item"><a href="#gallery"><i class="fas fa-images"></i> Galería</a></li>
                 <li class="nav-item"><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
             <a href="tel:3156165943" class="nav-call-button">
-                <i class="fas fa-phone"></i>3156165943
+                <i class="fas fa-phone"></i>3236927372
             </a>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -36,13 +37,22 @@
         <div class="swiper background-slider">
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide" style="background-image: url('img/1.jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner.jpeg');"></div>
+               <!-- <div class="swiper-slide" style="background-image: url('img/banner2.jpeg');"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner3.jpeg');"></div> -->
             </div>
         </div>
-        <div class="header-overlay"><div class="header-content">
-            <h1>"El COPAL"</h1>
-            <p>Tu refugio perfecto para la recreación y el descanso</p>
-        </div></div>
+        <div class="header-overlay">
+        <div class="header-content">
+            <h1>Casa LUA</h1>
+                
+        </div>
+                <p class="p1">Es naturaleza, tranquilidad y buena vibra.
+                <br>
+                Un refugio entre montañas donde la luna parece más cerquita 
+                <br>y donde 
+                siempre eres bienvenido.</p>
+        </div>
        <!-- <div class="header-content">
             <h1>Finca "El Descanso Soñado"</h1>
             <p>Tu refugio perfecto para la recreación y el descanso</p>
@@ -52,10 +62,29 @@
     <main class="container">
         <!-- Sección: Sobre la Finca -->
         <section id="about" class="card">
-            <h2>Sobre Nuestra Finca</h2>
+            <h2>¿Quiénes Somos?</h2>
             <p>
-                Bienvenido a nuestro paraíso privado. Un lugar diseñado para que te desconectes de la rutina y te conectes con la naturaleza. Ideal para familias, amigos y eventos especiales.
-            </p>
+               En CASA LUA creemos que la vida está hecha de momentos simples, profundos y mágicos.
+               <br>
+               <br>
+Nacimos entre montañas, donde  la luna ilumina los caminos como una vieja amiga. 
+
+Somos un refugio creado con amor, pensado para que cada persona que nos visita encuentre paz, alegría y un pedacito de sí mismo.
+
+Los días en CASA LUA tienen ese encanto especial donde el tiempo pasa más despacio y todo se siente más auténtico. 
+
+Aquí puedes vivir momentos románticos, celebraciones alegres, fiestas llenas de buena vibra o descansos profundos que hacen bien al corazón. 
+
+Nos encanta recibir a quienes buscan disfrutar la buena vida, reír sin prisa, compartir historias bajo la luna y sentirse libres entre la naturaleza.
+
+<br>
+<br>
+CASA LUA es magia, es conexión, es alegría.
+<br>    
+Es ese lugar donde llegas como visitante y te vas sintiendo parte de algo hermoso.
+<br>
+Aquí siempre hay espacio para el amor, la felicidad y los recuerdos que duran para siempre. 
+            <hr></p>
         </section>
 
         <!-- Sección: Galería de Imágenes con Zoom -->
@@ -63,31 +92,42 @@
             <h2>Galería de Fotos</h2>
             <p>Haz clic en una imagen para verla en grande.</p>
             <div class="gallery">
-                <img src="https://picsum.photos/id/1015/400/300" alt="Vista de la piscina" class="zoomable">
-                <img src="https://picsum.photos/id/1018/400/300" alt="Paisaje de montaña" class="zoomable">
-                <img src="https://picsum.photos/id/1025/400/300" alt="Habitación principal" class="zoomable">
-                <img src="https://picsum.photos/id/1040/400/300" alt="Zona de BBQ" class="zoomable">
+                <img src="img/banner.jpeg" alt="Vista de la piscina" class="zoomable">
+                <img src="img/banner2.jpeg" alt="Paisaje de montaña" class="zoomable">
+                <img src="img/banner3.jpeg" alt="Habitación principal" class="zoomable">
+                <img src="img/1.3.jpeg" alt="Habitación principal" class="zoomable">
+                <img src="img/1.1.jpeg" alt="Vista de la piscina" class="zoomable">
+                <img src="img/1.2.jpeg" alt="Paisaje de montaña" class="zoomable">
+                
             </div>
         </section>
 
         <!-- Sección: Servicios y Comodidades -->
-        <section class="card">
-            <h2>Servicios Incluidos</h2>
-            <ul>
-                <li><i class="fas fa-water-ladder"></i> Piscina privada</li>
-                <li><i class="fas fa-wifi"></i> Wi-Fi de alta velocidad</li>
-                <li><i class="fas fa-fire-burner"></i> Zona de BBQ y parrilla</li>
-                <li><i class="fas fa-bed"></i> Habitaciones cómodas</li>
-                <li><i class="fas fa-car"></i> Parqueadero privado</li>
-                <li><i class="fas fa-kitchen-set"></i> Cocina totalmente equipada</li>
-            </ul>
+        <section class="card services-card">
+            <div class="services-row">
+                <div class="services-list">
+                    <h2>Servicios Incluidos</h2>
+                    <ul>
+                        <li><i class="fas fa-water-ladder"></i> Piscina privada</li>
+                        <li><i class="fas fa-wifi"></i> Wi-Fi de alta velocidad</li>
+                        <li><i class="fas fa-fire-burner"></i> Zona de BBQ y parrilla</li>
+                        <li><i class="fas fa-bed"></i> Habitaciones cómodas</li>
+                        <li><i class="fas fa-car"></i> Parqueadero privado</li>
+                        <li><i class="fas fa-kitchen-set"></i> Cocina totalmente equipada, cocina de leña</li>
+                        <li><i class="fas fa-fire-burner"></i> Bolirrana, mesa de billar</li>
+                    </ul>
+                </div>
+                <div class="services-image">
+                    <img src="img/parking.jpeg" alt="Parqueadero privado" class="services-img zoomable">
+                </div>
+            </div>
         </section>
 
         <!-- Sección: Contacto y Redes Sociales -->
         <section id="contact" class="card contact-card">
             <h2>¡Reserva Ahora!</h2>
             <p>Contáctanos directamente por WhatsApp para consultar disponibilidad y precios, o síguenos en nuestras redes.</p>
-            <a href="https://wa.me/TUNUMERODECELULAR" target="_blank" class="cta-button">
+            <a href="https://wa.me/573236927372" target="_blank" class="cta-button">
                 <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
             </a>
         </section>
@@ -95,17 +135,17 @@
 
     <!-- Iconos de Redes Sociales Flotantes -->
     <div class="floating-social-bar">
-        <a href="https://wa.me/TUNUMERODECELULAR" target="_blank" class="social-icon whatsapp">
+        <a href="https://wa.me/573236927372" target="_blank" class="social-icon whatsapp">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://instagram.com/TUUSUARIO" target="_blank" class="social-icon instagram">
+        <a href="https://www.instagram.com/casalua1111?igsh=eDdiam8zdHZzM2xs" target="_blank" class="social-icon instagram">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://facebook.com/TUPAGINA" target="_blank" class="social-icon facebook">
+        <a href="https://www.facebook.com/profile.php?id=61584031126575&sfnsn=wa" target="_blank" class="social-icon facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://tiktok.com/@TUUSUARIO" target="_blank" class="social-icon tiktok">
-            <i class="fab fa-tiktok"></i>
+        <!-- <a href="https://tiktok.com/@TUUSUARIO" target="_blank" class="social-icon tiktok">
+            <i class="fab fa-tiktok"></i> -->
         </a>
     </div>
 
@@ -116,7 +156,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Finca "El Descanso Soñado". Todos los derechos reservados.</p>
+        <p>&copy; 2025 Finca "Casa LUA". Todos los derechos reservados.</p>
     </footer>
 
     <!-- Swiper JS -->
