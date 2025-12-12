@@ -63,7 +63,8 @@ header {
     font-size: 1.5rem;
     align-content: center;
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
-
+    padding: 10% 10% 0 10%;
+    font-weight:500;
 }
 
 .background-slider {
@@ -83,11 +84,11 @@ header {
 
 /* Aplica la animación SÓLO a la diapositiva activa */
 .swiper-slide-active-kenburns {
-    animation: kenburns 5s ease-out forwards;
+    animation: kenburns 3s ease-out forwards;
 }
 
 @keyframes kenburns {
-    0% { transform: scale(1.1); }
+    0% { transform: scale(1.4); }
     100% { transform: scale(1); }
 }
 
@@ -364,6 +365,8 @@ footer {
         max-height: 48px;
     }
 }
+
+
 
 .container {
     width: auto;
